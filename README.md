@@ -1,4 +1,4 @@
-# Pentaho Commons XUL
+# Tahopen Commons XUL
 
 ### Project Structure
   
