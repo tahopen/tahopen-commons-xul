@@ -13,8 +13,8 @@
     <version>0.1.0.0-SNAPSHOT</version>
   </parent>
 
-  <name>Pentaho Commons Xul</name>
-  <url>http://www.pentaho.org</url>
+  <name>Tahopen Commons Xul</name>
+  <url>http://www.tahopen.org</url>
 
   <licenses>
     <license>
@@ -53,36 +53,11 @@
   </dependencyManagement>
 
  <repositories>
- <!--
-    <repository>
-      <id>pentaho-public</id>
-      <name>Pentaho Public</name>
-      <url>https://repo.orl.eng.hitachivantara.com/artifactory/pnt-mvn/</url>
-      <releases>
-        <enabled>true</enabled>
-        <updatePolicy>daily</updatePolicy>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-        <updatePolicy>interval:15</updatePolicy>
-      </snapshots>
-    </repository>
- -->   
+ 
   </repositories>
 
   <pluginRepositories>
- <!--   <pluginRepository>
-      <id>pentaho-public-plugins</id>
-      <name>Pentaho Public Plugins</name>
-      <url>https://repo.orl.eng.hitachivantara.com/artifactory/pnt-mvn/</url>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-      <releases>
-        <updatePolicy>never</updatePolicy>
-      </releases>
-    </pluginRepository>
-    -->
+ 
   </pluginRepositories>
 
 </project>
