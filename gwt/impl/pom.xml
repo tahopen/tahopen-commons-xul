@@ -36,7 +36,8 @@
     <dependency>
       <groupId>com.google.gwt</groupId>
       <artifactId>gwt-incubator</artifactId>
-      <version>${gwt-incubator.version}</version>
+      <version>2.0.1</version>
+      <!-- <version>${gwt-incubator.version}</version>-->
     </dependency>
     <dependency>
       <groupId>com.allen-sauer.gwt.dnd</groupId>
