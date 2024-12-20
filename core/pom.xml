@@ -6,7 +6,7 @@
   <parent>
     <groupId>org.tahopen</groupId>
     <artifactId>commons-xul</artifactId>
-    <version>0.1.0.0</version>
+    <version>0.1.0.0-SNAPSHOT</version>
   </parent>
 
   <groupId>org.tahopen</groupId>
@@ -14,14 +14,14 @@
   <version>0.1.0.0</version>
   
   <name>Commons XUL Core</name>
-  <description>Library XUL the Tahopen ecosystem.</description>  
+  <description>Library Core XUL the Tahopen ecosystem</description>  
   <url>http://www.tahopen.org</url>
 
   <scm>
     <connection>scm:git:git://github.com/tahopen/tahopen-commons-xul.git</connection>
     <developerConnection>scm:git:git@github.com:tahopen/tahopen-commons-xul.git</developerConnection>
     <url>https://github.com/tahopen/tahopen-commons-xul</url>
-</scm>  
+  </scm>  
 
   <licenses>
     <license>
