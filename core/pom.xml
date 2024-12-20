@@ -11,7 +11,8 @@
 
   <groupId>org.tahopen</groupId>
   <artifactId>commons-xul-core</artifactId>
-
+  <version>0.1.0.0</version>
+  
   <name>Commons XUL Core</name>
   <description>Library XUL the Tahopen ecosystem.</description>  
   <url>http://www.tahopen.org</url>
