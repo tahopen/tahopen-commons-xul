@@ -15,7 +15,14 @@
 
   <name>Tahopen Commons Xul</name>
   <url>http://www.tahopen.org</url>
+  <description>Library XUL the Tahopen ecosystem.</description>
 
+  <scm>
+    <connection>scm:git:git://github.com/tahopen/tahopen-commons-xul.git</connection>
+    <developerConnection>scm:git:git@github.com:tahopen/tahopen-commons-xul.git</developerConnection>
+    <url>https://github.com/tahopen/tahopen-commons-xul</url>
+</scm>  
+  
   <licenses>
     <license>
       <name>GNU Lesser General Public License, Version 2.1</name>
@@ -37,12 +44,6 @@
     <mockito-core.version>4.11.0</mockito-core.version>
   </properties>
 
-<!--
-  <scm>
-    <developerConnection>scm:git:git@github.com:pentaho/pentaho-commons-xul.git</developerConnection>
-    <tag>HEAD</tag>
-  </scm>
--->
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -53,12 +54,72 @@
     </dependencies>
   </dependencyManagement>
 
- <repositories>
- 
-  </repositories>
+  <developers>
 
-  <pluginRepositories>
- 
-  </pluginRepositories>
+    <developer>
+      <id>marciojv</id>
+      <name>Marcio Junior Vieira</name>
+      <email>marcio@tahopen.org</email>
+    </developer>
 
+  </developers>
+  
+  <build>
+    <plugins>
+       
+      <!-- Generate java docs -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>3.2.0</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+      <!-- sign key gpg--> 
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-gpg-plugin</artifactId>
+        <version>3.0.1</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>sign</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+      <!-- publish to Maven Central --> 
+      <plugin>
+         <groupId>org.sonatype.central</groupId>
+         <artifactId>central-publishing-maven-plugin</artifactId>
+         <version>0.6.0</version>
+         <extensions>true</extensions>
+         <configuration>
+           <publishingServerId>maven-central-snapshots</publishingServerId>
+         </configuration>
+      </plugin>    
+
+    </plugins>
+  </build>
+
+  <distributionManagement>
+
+    <repository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+    
+    <snapshotRepository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+    </snapshotRepository>
+    
+  </distributionManagement>
 </project>
