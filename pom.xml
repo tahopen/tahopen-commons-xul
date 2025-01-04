@@ -10,7 +10,7 @@
   <parent>
     <groupId>org.tahopen</groupId>
     <artifactId>tahopen-drianmon-parent-pom</artifactId>
-    <version>0.1.0.0-SNAPSHOT</version>
+    <version>0.1.0.0</version>
   </parent>
 
   <name>Tahopen Commons Xul</name>
