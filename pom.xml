@@ -14,7 +14,7 @@
   </parent>
 
   <name>Tahopen Commons Xul</name>
-  <url>http://www.tahopen.org</url>
+  <url>https://www.tahopen.org</url>
   <description>Library XUL the Tahopen ecosystem.</description>
 
   <scm>
