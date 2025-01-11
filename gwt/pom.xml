@@ -10,7 +10,7 @@
 
   <artifactId>commons-xul-gwt</artifactId>
   <packaging>pom</packaging>
- 
+  <version>0.1.0.0</version> 
   <name>Commons XUL GWT</name>
   
   <properties>
